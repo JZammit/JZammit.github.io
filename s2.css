@@ -1,0 +1,63 @@
+#canv1 {
+
+  background-color: white;
+  border: black 2px solid;
+  width:100%;
+}
+
+#topcanv {
+  border: blue 2px dashed;
+  width:100%;
+  /* background: transparent; */
+}
+
+.canvwrap {
+  position: relative;
+  width: 2000px;
+  height: 2000px;
+  border: black 2px solid;
+}
+
+.canvwrap canvas {
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.slidecontainer {
+  width: 40%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 40%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.4;
+  -webkit-transition: .2s;
+  transition: opacity .6s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 90%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
